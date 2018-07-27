@@ -7,6 +7,7 @@ phases:
       - mvn test
   post_build:
     commands:
+      - echo hello world
       - echo Build completed on `date`
       - mvn package
 artifacts:
